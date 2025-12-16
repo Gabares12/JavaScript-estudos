@@ -7,8 +7,8 @@
 // 4- const - um valor que não pode ser modificado
 
 // essa é uma variavel
-idade = 20;
-let dataAniversario = '12 de março';
+ idade = 20
+ dataAniversario = '12 de março';
 
 console.log('Minha idade atual é:' + idade);
 console.log(idade);

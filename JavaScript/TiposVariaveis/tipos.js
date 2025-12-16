@@ -1,9 +1,9 @@
 let nome = 'ana'; // String
-let idade = 23; // number
-let altura = 1.67; //number
+let idade = 21; // number
+let altura = 1.53; //number
 let chovendo = true; //boolean
-let cidade // undefined
-let aprendeuJS = null; // object
+let cidade // undefined - n foi definido , não foi declarado
+let aprendeuJS = null; // object - declarando a ausencia de valor
 let simbulo = Symbol() // valor imutavel 
 
 
