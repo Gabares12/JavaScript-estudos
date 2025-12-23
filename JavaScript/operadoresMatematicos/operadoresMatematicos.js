@@ -36,6 +36,9 @@ contador = contador - 1
 contador -- // " -- " é igual a -1 na variavel
 console.log(`Decremento: `, contador )
 
+// verifica se é par ou impar
+% 2 === 0
+
 numeroTres += 3
 numeroTres -= 3
 numeroTres *= 3
