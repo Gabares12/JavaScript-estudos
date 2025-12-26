@@ -28,9 +28,4 @@ switch (notaDoAluno) {
         default:
             console.log('valor inválido');
             break
-            
-        
-
-
-
-}
+    }
