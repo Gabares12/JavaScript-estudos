@@ -60,7 +60,9 @@ let pares = numero1 && numero2
 if (pares % 2 === 0)
     console.log(`é par `);
     
-else{console.log(`não é par`)}
+else{console.log(`não é par`)
+    
+}
 
 //9------------------------------
 
