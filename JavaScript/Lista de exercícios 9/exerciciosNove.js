@@ -35,3 +35,74 @@ console.log(soma);
 console.log('==========================================')
 
 //5
+let notas = [1,4,10,6]
+let somaDasNotas = 0
+notas.forEach(nota =>{ // para fazer calculos de soma com array
+    somaDasNotas += nota // somaDasNotas = somaDasNotas + nota
+})
+
+let media = somaDasNotas / notas.length // calculo da media
+
+if (media >= 7) {
+    console.log('aprovado');
+    
+} else {
+    console.log('reprovado'); 
+}
+console.log('==========================================')
+
+// 6 - 
+
+let nomesAmigos = ['Verittas','Cacko','Erikozo','viny','RuanzinhoOrds']
+
+nomesAmigos.forEach(element => {  // element representa cada item do array
+    console.log('Olá amigo', element); // aqui usamos o element para mostrar cada item do array
+});
+
+console.log('==========================================')
+
+// 7 -
+let idades = [18,17,15,7,27,35,16]
+
+idades.forEach(idades =>{
+ 
+    if (idades >= 18)
+        console.log('Maior de idade:', idades);
+}) 
+
+console.log('==========================================')
+
+// 8 -
+
+let precos = [100,50,150,250]
+let desconto = 0.1 // 10%
+
+desconto = precos.map(precos =>{ // map cria um novo array com os valores modificados
+    
+    console.log('preços com 10% de desconto: ', precos);
+
+})
+
+console.log('==========================================')
+
+// 9 -
+
+let tarefas = ['[ ] estudar','[ ]limpar a casa','fazer compras','lavar roupa','cozinhar']
+let pendendes = tarefas.filter(tarefas => {
+    return tarefas.startsWith('[ ]') // filtra as tarefas que começam com [ ]
+})
+ console.log('tarefas pendentes: ',pendendes );
+
+ console.log('==========================================')
+
+// 10 -
+let precosProdutos = [100,200,300,400,500]
+let descontos = 0.2 // 20%
+
+descontos = precosProdutos.map(precosProdutos =>{
+    
+    console.log('PREÇOS COM 20% DE DESCONTO!!: ',precosProdutos);
+    
+})
+
+ 
