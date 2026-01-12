@@ -1,0 +1,7 @@
+classList.Toggle
+preventDefault()
+localStorage.setItem 
+JSON.stringify
+JSON.parse
+document.creatElement()
+.append
