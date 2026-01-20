@@ -3,6 +3,7 @@ const elencoVerum = ['Ludwig','Johan','Verônica','Valdir','Vincent','Luciano','
 
 
 // quantos elementos serão cortados
+
 // primeiro elemento - representa o indice
 // segundo elemento - representa quantos cortes vão ter apartir do indice
 // terceiro elemento - representa as adições por ex: sai 1 e entra 1
