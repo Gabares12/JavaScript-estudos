@@ -2,7 +2,7 @@ const estudante = {
     nome: 'josé silva',
     idade: 32,
     cpf: '234254567567',
-    turma: 'JavaScript'
+    turma:'JavaScript'
 }
 
 estudante.telefone ='519999999 ';
