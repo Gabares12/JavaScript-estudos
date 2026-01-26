@@ -8,7 +8,7 @@ const estudante = {
     telefones: ['551199999999', '551199999997']
 }
 
-estudane.endereco = {
+estudante.endereco = {
     rua: 'ruas das almas',
     numero: '666',
     complemento: 'perto ao rio de lava'
