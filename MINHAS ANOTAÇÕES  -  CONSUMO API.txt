@@ -1,0 +1,98 @@
+MINHAS ANOTAÇÕES  -  CONSUMO API
+
+Síncrono :
+uma tarefa é concluída após a outra
+
+Assíncrono:
+há tarefas executadas em segundo plano
+================================================================
+Call Stack: executa o código agora, de forma direta
+
+Task Queue: Guarda tarefas que serão executadas 
+depois: quando o JavaScript estiver livre.
+
+Callback: Callback basicamente são funções passadas como argumento para 
+outras funções, geralmente para serem executadas após um evento ou um período de tempo  (Callbacks são assíncronos, portanto são funções que são ativadas)
+
+Event Loop:
+Verifica se a call Stack está vazia? se sim
+ele envia a próxima tarefa. se não, ele espera
+
+
+
+EXEMPLO:
+console.log("1"); - "1" vai direto para a call Stack
+
+setTimeout(() => {  - vai para o navegador -> callback e vai da Task Queue
+  console.log("2");
+}, 0);
+"3" - executa 
+console.log("3")
+
+"2" - executa
+Mesmo com 0ms, ele vai para a fila.
+Isso só existe por causa do Event Loop.
+================================================================
+Fetch :
+
+o método fetch é um método assíncrono e ele tem como parâmetro 
+obrigatório a URL da API (é o único parâmetro obrigatório desse Método)
+
+EXEMPLO:
+let consultaCEP = fetch('viacep.com.br/ws/01001000/json')
+
+se der erro é pq deve faltar o no link - Https://
+
+Faz uma requisição e devolve uma Promise.
+
+================================================================
+Promises :
+
+EXEMPLO :
+Pending - Pedido saiu pra entrega, ainda não chegou
+Fulfilled - Pedido chegou (Resolve)
+Rejected - Deu erro na entrega (Reject)
+
+================================================================
+Then (então):
+
+
+ resposta de uma requisição chega em formato de bytes. Desta forma o .json() transforma o corpo e retorna um json formatado. O formato JSON (JavaScript Object Notation) possui basicamente a mesma sintaxe que a de um objeto JS.
+
+EXEMPLO :
+.then(resposta => resposta.json())
+
+================================================================
+
+catch() :
+
+é utilizado para capturar e tratar erros que ocorrem quando uma promise
+é rejeitada, exibindo o erro inteiro no console
+
+tambem dá para tratar o erro e exibir uma mensagem "Bonita de erro"
+
+EXEMPLO :
+.then(r => {
+        if (r.erro) {
+            throw Error('esse cep não existe!')
+        } else
+            console.log(r)
+    })
+
+================================================================
+Finally() :
+
+é executado independente se a promessa foi resolvida ou rejeitada
+
+O finally() é útil quando você precisa executar um código que deve acontecer de qualquer maneira, independentemente do resultado da promessa. 
+
+EXEMPLO :
+ .finally(mensagem => console.log('Processamento concluido!'))
+================================================================
+
+Async Await() :
+
+
+================================================================
+
+Try ()
