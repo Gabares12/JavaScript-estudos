@@ -57,8 +57,11 @@ console.log('========= USANDO TYPEOF ==========');
 for (let chave in estudante) {
 
     // typeof - fará ele exibir apenas as chaves com valores
-   //  funções por ex: ele passara reto
+    //  funções por ex: ele passara reto
     const tipo = typeof estudante[chave]
-    const texto = ` a chave ${chave} tem o valor ${estudante[chave]}`
-    console.log(texto);
+    if (tipo !== 'object' && tipo !== 'function') {
+        const texto = ` a chave ${chave} tem o valor ${estudante[chave]}`
+        console.log(texto);
+    }
+
 }
