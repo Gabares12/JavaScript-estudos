@@ -1,0 +1,44 @@
+This: 
+
+O this é quem está “falando” dentro da função.
+Ou seja: é o dono da função no momento em que ela é chamada.
+COMO FUNCIONA:
+
+quando a função está dentro de um objeto → this = o objeto
+quando a função é chamada solta → this = indefinido (ou window no navegador)
+quando você usa bind() → this fica preso a um objeto pra sempre
+
+EXEMPLO: 
+
+
+const user = {
+  nome: "juliana",
+  email: "j@j.com",
+  exibirInfos: function () {
+    console.log(this.nome, this.email);
+  }
+};
+
+user.exibirInfos();
+---> this = user → juliana j@j.com
+
+
+================================================================
+
+Bind:
+
+ AMARRAR o this em um objeto
+ e criar uma nova função com o this fixo
+
+EXEMPLO:
+
+const exibir = function() {
+  console.log(this.nome, this.email);
+}
+
+const exibirNome = exibir.bind(user);
+
+exibirNome();
+---> funciona → this = user
+
+================================================================
