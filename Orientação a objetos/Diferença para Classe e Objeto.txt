@@ -1,0 +1,46 @@
+Diferença para Classe e Objeto
+
+A principal diferença entre criar objeto 
+
+
+cria um objeto simples e direto, sem a necessidade de um modelo
+predefinido.
+
+const pessoa = {
+  nome: "João",
+  idade: 30,
+  profissao: "Engenheiro"
+}
+
+↓ ideial para criar objetos únicos, com propriedades especificas
+↓ sem a necessidade de métodos complexos ou herença. 
+
+================================================================
+
+Define um modelo para a classe, permitindo criar múltiplos objetos
+com a mesma propriedades e métodos.
+
+a classe define um construtor para inicializar as propriedades do objeto
+↓e pode conter métodos que definem o comportamento do objeto↓
+
+class Pessoa {
+  constructor(nome, idade, profissao) {
+
+    this.nome = nome;
+    this.idade = idade;
+    this.profissao = profissao;
+  }
+
+  apresentar() {
+
+    console.log(`Olá, meu nome é ${this.nome}, tenho ${this.idade} anos e sou 
+
+${this.profissao}.`);
+
+  }
+
+}
+
+const pessoa1 = new Pessoa("Maria", 25, "Médica");
+
+pessoa1.apresentar(); // Olá, meu nome é Maria, tenho 25 anos e sou Médica.

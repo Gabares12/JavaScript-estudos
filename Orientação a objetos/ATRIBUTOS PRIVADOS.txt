@@ -1,0 +1,22 @@
+ATRIBUTOS PRIVADOS 
+
+- Encapsulamento -
+
+é a ação de ocultar métodos e propriedades de um classe do restante do código
+
+ATRIBUTOS PRIVADOS
+
+JavaScript permite declarar atributos privados usando o " # " antes do nome da propriedade
+
+para acessar  ou modificar os métodos da classe use this.#nomeDoAtributo 
+
+EXEMPLO:
+
+class Cofre {
+  #senha // Atributo privado para a senha
+  #valorSecreto // Atributo privado para o valor secreto
+
+  constructor(senha, valorSecreto) {
+    this.#senha = senha;
+    this.#valorSecreto = valorSecreto;
+  }
